@@ -50,7 +50,7 @@ LSTM
 	•	Final best-performing model trained on the full global active power dataset (~1M records) with adjusted dropout to handle large input size.
 
 
-**Results**
+**Results**  
 
 | Model                        | R² Score | Test RMSE |
 |-------------------------------|:--------:|----------:|
@@ -69,7 +69,8 @@ Key findings:
 
 
 
-**Future Work**
+**Future Work**  
+
 	•	Introduce anomaly detection and data augmentation to better handle sudden shifts in patterns.
 	•	Incorporate validation monitoring during training to address overfitting.
 	•	Expand models to broader datasets beyond a single household (e.g., web traffic, weather data).
