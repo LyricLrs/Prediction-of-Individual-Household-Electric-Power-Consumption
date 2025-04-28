@@ -1,14 +1,13 @@
 # Forecasting Individual Household Electric Power Consumption
 
-Authors: Catherine Hua, Lyric Li, Anni Zheng
-Affiliation: New York University
-Course: Probabilistic Time Series Analysis, Fall 2024
+Authors: Catherine Hua, Lyric Li, Anni Zheng  
+Affiliation: New York University  
+Course: Probabilistic Time Series Analysis, Fall 2024  
 
 
-⸻
 
-**Project Overview
-**
+**Project Overview**
+
 This project explores predictive modeling of household electric power consumption using three distinct approaches:
 	•	Statistical model: ARIMA
 	•	Machine learning model: XGBoost
@@ -18,7 +17,6 @@ The objective is to identify the model that best captures temporal and seasonal 
 
 Through a series of preprocessing, feature engineering, modeling, and evaluation steps, we benchmarked model performance using RMSE and R-squared metrics. Among the models tested, LSTM on the full dataset achieved the best predictive performance.
 
-⸻
 
 **Dataset**
 
@@ -32,8 +30,6 @@ Key facts:
 For modeling:
 	•	We selected a 2-year period for training and testing.
 	•	The dataset was aggregated to hourly intervals to manage complexity and highlight daily/seasonal trends.
-
-⸻
 
 **Methods**
 
@@ -52,8 +48,7 @@ LSTM
 	•	Baseline model used hourly active power.
 	•	Enhanced model with additional features (is_weekend, is_holiday).
 	•	Final best-performing model trained on the full global active power dataset (~1M records) with adjusted dropout to handle large input size.
- 
-⸻
+
 
 **Results**
 
@@ -72,7 +67,7 @@ Key findings:
 	•	XGBoost captured general trends but faced challenges modeling sequential dependencies.
 	•	LSTM was the most flexible but prone to overfitting on large datasets.
 
-⸻
+
 
 **Future Work**
 	•	Introduce anomaly detection and data augmentation to better handle sudden shifts in patterns.
